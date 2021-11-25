@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .title {
+    font: {
+      family: GilroyExtraBold;
+      style: normal;
+      weight: 800;
+      size: 28px;
+    }
+    line-height: 41px;
+  }
+
+  .changeButton {
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 3px 15px 4px;
+    font: {
+      family: GilroyMedium;
+      weight: 500;
+      style: normal;
+      size: 14px;
+    }
+    line-height: 19.6px;
+  }
+}

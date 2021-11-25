@@ -1,0 +1,34 @@
+@font-face {
+  font-family: GilroyMedium;
+  src: url(./fonts/Gilroy-Medium.woff);
+}
+
+@font-face {
+  font-family: GilroyExtraBold;
+  src: url(./fonts/Gilroy-ExtraBold.woff);
+}
+
+body {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+a,
+li,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0vw;
+}

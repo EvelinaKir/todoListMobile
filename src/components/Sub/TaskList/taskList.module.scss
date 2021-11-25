@@ -1,0 +1,79 @@
+.MainContainer {
+  margin-top: 47px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.oneTask {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 30px;
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+      font-family: GilroyMedium;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 120%;
+    }
+    & + label:before {
+      content: "";
+      margin-right: 14px;
+      display: inline-block;
+      vertical-align: text-top;
+      border-radius: 100%;
+    }
+  }
+  label {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+  }
+  label span,
+  span {
+    max-width: 259px;
+  }
+  .delText {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    font-family: GilroyMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    bottom: 6.5px;
+    margin-bottom: -6.5px;
+  }
+}
+
+.checkbox {
+  & + label:before {
+    width: 20px !important;
+    height: 20px !important;
+    border: 2px solid #d9d9d9;
+  }
+
+  &:checked + label:before {
+    background: center no-repeat url(../../../images/checkboxButton.svg);
+    background-size: 12px;
+  }
+
+  &:checked + label {
+    color: #00000099;
+  }
+}
+
+.deleteCheckbox {
+  & + label:before {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e85c5c;
+    background: center no-repeat url(../../../images/deleteTask.svg);
+  }
+}

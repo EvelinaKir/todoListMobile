@@ -1,0 +1,20 @@
+.container {
+  padding: 60px 40px 40px;
+}
+
+.emptyList {
+  margin-top: 49px;
+  font: {
+    family: GilroyMedium;
+    weight: 500;
+    style: normal;
+    size: 18px;
+  }
+  line-height: 21.6px;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
